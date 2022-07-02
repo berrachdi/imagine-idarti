@@ -1,24 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactDOM from 'react-dom/client';
+import Home from './components/Home';
+import Comp from './components/comp';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+import React, { Component } from 'react';
+import axios from 'axios';
+import {BrowserRouter as Route, Router, Routes} from 'react-router-dom'
+
+import { InputLabel,MenuItem,FormControl,Select,TextField,Card, CardContent, Grid, Typography, Button } from '@material-ui/core'
+
+
+const App = ()=>{
+  return(
+    
+      <div className="App">
+        
+        <div className='content'>
+         
+          <Home/>
+
+        </div>
+
+      </div>
+   
+
   );
 }
 
